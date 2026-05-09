@@ -1,0 +1,85 @@
+/* ---=== FONTS ===---------------------------------------------------------- */
+/* -- manrope-500 - latin -- */
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/manrope-v20-latin-500.woff2") format("woff2");
+}
+/* -- manrope-700 - latin -- */
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v20-latin-700.woff2") format("woff2");
+}
+
+/* ---=== VARIABLES CSS ===---------------------------------------------------------- */
+:root {
+  /* -- colors -- */
+  --clr-grey-900: hsl(217, 19%, 35%);
+  --clr-grey-500: hsl(214, 17%, 51%);
+  --clr-grey-400: hsl(212, 23%, 69%);
+  --clr-grey-200: hsl(210, 46%, 95%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* -- fonts weight -- */
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* -- fonts size -- */
+  --fs-13: 0.8125rem;
+  --fs-20: 1.25rem;
+
+  /* -- line height -- */
+  --lh-130: 1.3;
+  --lh-140: 1.4;
+}
+
+/* ---=== RESET ===---------------------------------------------------------- */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---=== BASE ===----------------------------------------------------------------- */
+body {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: var(--fs-13);
+  line-height: var(--lh-140);
+}
+
+/* ---=== MAIN ===----------------------------------------------------------------- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* -- ARTICLE -- */
+.card {
+  max-width: 327px;
+}
